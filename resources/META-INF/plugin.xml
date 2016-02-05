@@ -1,0 +1,26 @@
+<idea-plugin url="https://github.com/ahubold/intellij-optimize-imports-for-scope" version="2">
+  <id>OptimizeImportsForScope</id>
+  <name>Optimize Imports For Scope</name>
+  <version>1.0</version>
+  <vendor>Andreas Hubold</vendor>
+
+  <description><![CDATA[
+      Adds a menu item to optimize imports across the whole project with the possibility
+      to restrict the files by scope and/or file mask.
+    ]]></description>
+
+  <change-notes><![CDATA[
+      Initial release of the plugin.
+    ]]>
+  </change-notes>
+
+  <idea-version since-build="143.1821"/>
+
+  <actions>
+    <action id="optimizeImportsForScope" class="de.hubold.intellij.optimize.OptimizeImportsForScopeAction"
+            text="Optimize Imports for Scope/File Mask" description="Optimize Imports for a scope and/or file mask">
+      <add-to-group group-id="CodeFormatGroup" anchor="after" relative-to-action="OptimizeImports"/>
+    </action>
+  </actions>
+
+</idea-plugin>
